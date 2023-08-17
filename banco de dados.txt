@@ -1,0 +1,32 @@
+create database login;
+
+use login;
+
+create table Lg_Client(
+id_cliente int auto_increment not null primary key,
+nome varchar(30),
+telefone varchar(30),
+cpf varchar(11),
+debitos double);
+
+selectfrom Lg_Client;
+
+insert into Lg_Client (nome, telefone, cpf, debitos) VALUES ('Victor','61999420604','06496422109','50.25');
+
+create database infos;
+
+use infos;
+
+create table Lg_Infos(
+id_cliente int auto_increment not null primary key,
+nome varchar(30),
+cpf varchar(11),
+telefone varchar(11),
+mae varchar(60),
+pai varchar(60));
+
+selectfrom Lg_Infos;
+
+insert into Lg_Infos (nome, cpf, telefone, mae, pai) VALUES ('Victor','06496422109','61999420604','Elisangela Rocha De Matos Lopes','Jamir Lopes');
+
+
